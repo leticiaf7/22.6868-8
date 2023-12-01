@@ -5,7 +5,7 @@ pipeline {
         stage('Testes') {
             steps {
                 script {
-                    // Seus comandos para construir e rodar os testes
+                    sh 'node --version'
                     sh 'npm install'
                     sh 'npm test'
                 }
